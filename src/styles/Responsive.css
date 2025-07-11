@@ -1,0 +1,69 @@
+/* Fluid typography across the site */
+h1, h2, .banner-headline {
+    /* Never smaller than 1.5rem, never larger than 2.5rem, but scales with viewport */
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  p, .banner-description, .description, .email-line {
+    /* Never smaller than 0.9rem, never larger than 1.1rem */
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  }
+  
+  /* Global responsive tweaks */
+  @media (max-width: 768px) {
+    /* Projects and skills collapse to one column */
+    .projects-grid,
+    .skills-grid {
+      grid-template-columns: 1fr !important;
+    }
+  
+    /* Contact card & project cards & skill cards fill width */
+    .contact-card,
+    .project-card,
+    .skill-card {
+      width: 100%;
+    }
+  
+    /* Contact page: stack photo + details */
+    .contact-card {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    /* Hero buttons stack vertically */
+    .banner-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  /* Extra small devices */
+  @media (max-width: 480px) {
+    /* Tighter hero padding */
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    /* Smaller images */
+    .project-image {
+      height: 150px;
+    }
+  
+    .profile-photo {
+      width: 80px;
+      height: 80px;
+    }
+  
+    /* Smaller pill buttons */
+    .info-button {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  
+    /* Nudge the back-button in so it’s not too close to the edge */
+    .back-button {
+      top: 10px !important;
+      left: 10px !important;
+    }
+  }
+  
