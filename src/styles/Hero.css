@@ -1,0 +1,66 @@
+/* src/styles/Hero.css */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;               /* original shorter height */
+    margin-top: 20px;
+    /* background set via inline style in Hero.js */
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 5%;                /* text block position */
+    left: 5%;
+    max-width: 900px;          /* extended width */
+    color: white;
+  }
+  
+  .banner-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .banner-headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+    color: white;
+  }
+  
+  .banner-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .banner-buttons a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+  }
+  
+  .play-button {
+    background: white;
+    color: black;
+  }
+  
+  .more-info-button {
+    background: white;
+    color: black;
+  }
+  
+  .banner-description {
+    margin-top: 20px;
+    font-size: 0.9rem;          /* slightly increased size */
+    font-weight: bold;
+    line-height: 1.4;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+    color: white;
+  }
+  

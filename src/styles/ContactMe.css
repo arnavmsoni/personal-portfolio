@@ -1,0 +1,130 @@
+/* src/styles/ContactMe.css */
+
+.section-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  padding: 0 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* make sure the container is the positioning context */
+.section-page {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section-page {
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+}
+
+.back-button {
+  position: absolute;
+  top: 80px;    /* moved the button down significantly */
+  left: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+.back-button:hover {
+  color: #e50914;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-details {
+  flex: 1;
+  text-align: left;
+}
+
+.name {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.description {
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+.email-line {
+  margin: 0 0 24px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.email-line a {
+  color: #e50914;
+  text-decoration: none;
+}
+.email-line a:hover {
+  text-decoration: underline;
+}
+
+.contact-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.info-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.info-button:hover {
+  background: #444;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.6);
+}
+
+.coffee {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: #ccc;
+}

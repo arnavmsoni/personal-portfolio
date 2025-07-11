@@ -1,0 +1,40 @@
+/* src/styles/Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;            /* vertical centering */
+  justify-content: space-between;
+  padding: 24px 40px 8px;         /* more top padding, less bottom */
+  background: rgba(0, 0, 0, 0);   /* start fully transparent */
+  transition: background 0.3s ease;
+  z-index: 999;
+}
+
+.header.scrolled {
+  background: rgba(0, 0, 0, 1);   /* turns opaque black when scrolled */
+}
+
+.header h1 {
+  color: red;
+  font-size: 1.5rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;            /* vertical centering of links */
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 20px;              /* spacing between links */
+  transition: color 0.2s ease;
+}
+
+.header nav a:hover {
+  color: #ff4d4d;
+}

@@ -1,0 +1,72 @@
+/* src/styles/Experience.css */
+
+.experience-page {
+  position: relative;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.back-button {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+.back-button:hover {
+  color: #e50914;
+}
+
+/* Prevent margin-collapse pushing the whole container down */
+.timeline-container {
+  text-align: center;
+  /* removed margin-top */
+  /* instead, give internal top-padding */
+  padding: 4rem 20px 20px;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vertical-timeline-element-content {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vertical-timeline-element-title {
+  font-weight: bold;
+}
+
+.vertical-timeline-element-subtitle {
+  margin-bottom: 8px;
+}

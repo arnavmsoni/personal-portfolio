@@ -1,0 +1,77 @@
+/* src/components/Skills.css */
+
+/* Ensure the container positions its absolutely‐positioned back button */
+.skills-container {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: #e6e6e6;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #e6e6e6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Back button aligned with other pages, moved lower */
+.back-button {
+  position: absolute;
+  top: 100px;   /* lowered further to match Professional page */
+  left: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+.back-button:hover {
+  color: #e50914;
+}
