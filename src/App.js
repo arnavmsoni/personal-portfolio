@@ -56,13 +56,21 @@ export default function App() {
       <Header />        {/* ← Always visible */}
       <ScrollToTop />
       <Routes>
+        {/* Landing page */}
         <Route path="/" element={<FirstScreen />} />
+
+        {/* Profiles page */}
         <Route path="/profiles" element={<Profiles />} />
+
+        {/* Role-based Hero splash + TopPicks */}
         <Route path="/:role"           element={<RolePageWrapper />} />
         <Route path="/:role/experience" element={<Experience />} />
         <Route path="/:role/skills"     element={<Skills />} />
         <Route path="/:role/projects"   element={<Projects />} />
         <Route path="/:role/contact"    element={<ContactMe />} />
+
+        {/* Fallback to landing page */}
+        <Route path="*" element={<FirstScreen />} />
       </Routes>
     </div>
   );
